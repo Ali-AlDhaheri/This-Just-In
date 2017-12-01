@@ -26,10 +26,10 @@ request(url, function(err, resp, body) {
     console.log('complete');
     });
   }
-  // var jsonContents = require("./sana.json");
-  // var jsonContentz = JSON.parse(jsonContents);
-  // var r1 = sentiment(jsonContentz);
-  // console.log(r1);
+  var jsonContents = require("./sana.json");
+  var jsonContentz = JSON.parse(jsonContents);
+  var r1 = sentiment(jsonContentz);
+  console.log(r1);
 
 
 });
