@@ -21,15 +21,15 @@ request(url, function(err, resp, body) {
 
 
     var titleString = JSON.stringify(til);
+
     fs.writeFile("sana.json", titleString, function(err) {
-    if (err) throw err;
     console.log('complete');
     });
   }
-  
-  var jsonContent = require('./sana.json');
-  var r1 = sentiment(jsonContent);
-  console.log(r1);
+  // var jsonContents = require("./sana.json");
+  // var jsonContentz = JSON.parse(jsonContents);
+  // var r1 = sentiment(jsonContentz);
+  // console.log(r1);
 
 
 });
